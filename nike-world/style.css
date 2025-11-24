@@ -1,0 +1,276 @@
+/* =======================================================
+   LINKS DO MENU (NAV) — COR PADRÃO E HOVER
+   ======================================================= */
+   nav a {
+    color: black;             /* Cor padrão dos links */
+    text-decoration: none;    /* Remove o sublinhado */
+    font-weight: bold;        /* Deixa em negrito */
+    margin: 0 15px;           /* Espaçamento entre os links */
+  }
+  
+  nav a:hover {
+    color: red;               /* Cor ao passar o mouse */
+  }
+  
+  nav a:visited {
+    color: black;             /* Mantém os links SEM ficar roxo */
+  }
+  
+  /* =======================================================
+     CONFIGURAÇÕES GERAIS DO SITE
+     ======================================================= */
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: darkgray;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #000;
+    line-height: 1.6;
+  }
+  
+  /* =======================================================
+     TÍTULOS (H1 E H2)
+     ======================================================= */
+  h1, h2 {
+    background-color: #000;
+    color: white;
+    border: 5px solid black;
+    border-radius: 5px;
+    border-style: ridge;
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px 0;
+  }
+  
+  /* =======================================================
+     CENTRALIZAÇÃO GERAL DE ALGUMAS TAGS
+     ======================================================= */
+  #video,
+  #galeria,
+  header,
+  #cadastro,
+  footer,
+  aside,
+  nav {
+    text-align: center;
+  }
+  
+  /* =======================================================
+     HEADER (TOPO DO SITE)
+     ======================================================= */
+  header {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    margin-top: 10px;
+    border: 5px solid black;
+    border-radius: 30px;
+    padding: 5px;
+  }
+  
+  /* =======================================================
+     FORMULÁRIOS ESPECIAIS (GRADIENTE BONITO)
+     ======================================================= */
+  .formatarform {
+    background-image: linear-gradient(to right, rgb(248,142,142), rgb(198,248,198));
+    color: black;
+    width: fit-content;
+    margin: 10px auto;
+    padding: 20px;
+    border-style: ridge;
+    border-width: 10px;
+  }
+  
+  /* =======================================================
+     ARTIGOS E GALERIA DE IMAGENS
+     ======================================================= */
+  article,
+  #lista-img {
+    overflow: auto;
+    margin-top: 10px;
+    border: 5px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #eee;
+  }
+  
+  #sobre img,
+  #lista-img img {
+    float: left; /* Imagens à esquerda */
+  }
+  
+  /* =======================================================
+     CLASSE PARA CENTRALIZAR QUALQUER TAG
+     ======================================================= */
+  .centralizartag {
+    width: fit-content;
+    margin: auto;
+  }
+  
+  /* =======================================================
+     CONTAINER PRINCIPAL (ASIDE + SECTION)
+     ======================================================= */
+  .container-principal {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  /* =======================================================
+     MENU LATERAL (ASIDE)
+     ======================================================= */
+  aside {
+    width: 180px;
+    background-color: #ccc;
+    border: 5px solid black;
+    border-radius: 30px;
+    padding: 10px;
+  }
+  
+  /* =======================================================
+     MENU DE NAVEGAÇÃO (NAV DO TOPO)
+     ======================================================= */
+  nav {
+    background-color: #e6e6e6;
+    border: 5px solid black;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 10px auto;
+    width: 95%; /* Deixa igual ao da primeira imagem */
+  }
+  
+  /* =======================================================
+     SEÇÃO PRINCIPAL DO CONTEÚDO
+     ======================================================= */
+  section {
+    flex: 1;
+    border: 5px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #f2f2f2;
+  }
+  
+  /* =======================================================
+     RODAPÉ (FOOTER)
+     ======================================================= */
+  footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 10px;
+    border: 5px solid rgb(110,110,110);
+    border-radius: 30px;
+  }
+  
+  footer a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    color: red;
+  }
+  
+  /* =======================================================
+     IMAGENS DOS ARTIGOS
+     ======================================================= */
+  article img {
+    display: block;
+    margin: 10px auto;
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  /* =======================================================
+     FORMULÁRIOS SIMPLES
+     ======================================================= */
+     form {
+      margin: 20px auto;
+      width: 300px;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  form label {
+      display: block;
+      margin: 8px 0 4px;
+      font-weight: bold;
+      font-size: 14px;
+  }
+  
+  form input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      transition: 0.2s;
+  }
+  
+  form input:focus {
+      border-color: #000;
+      outline: none;
+      box-shadow: 0 0 4px rgba(0,0,0,0.3);
+  }
+  
+  /* Caixa onde aparece a confirmação do cadastro */
+#resultado {
+  display: none;            /* só aparece quando o JS ativa */
+  background-color: #f2f2f2;
+  border: 5px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  width: 350px;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 16px;
+}
+
+/* Título "Confirmar cadastro" */
+#resultado h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  background-color: black;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+/* Botões */
+#resultado button {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Botão confirmar = verde */
+#btnConfirmar {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Botão cancelar = vermelho */
+#btnCancelar {
+  background-color: #e53935;
+  color: white;
+}
+
+/* Efeito hover nos botões */
+#btnConfirmar:hover {
+  background-color: #45a049;
+}
+
+#btnCancelar:hover {
+  background-color: #cc2c2c;
+}

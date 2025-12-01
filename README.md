@@ -5,4 +5,4 @@
 1. História
 2. Evolução
 3. Modelos
-** e muito mais! **
+e, muito mais! 

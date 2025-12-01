@@ -1,8 +1,8 @@
 # nike-world
 
-## Tudo sobre **nike** aqui!
+## Tudo sobre **nike**.
 
 1. História
 2. Evolução
 3. Modelos
-###  E muito mais
+** e muito mais! **
